@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.PrimaryKeyJoinColumn"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.MapsId"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonBackReference"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonManagedReference"/>
+    <fullyQualifiedTypeName name="com.cdac.repository.CompanyDetailsRepository"/>
+    <fullyQualifiedTypeName name="com.cdac.entity.Employee"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.cdac.service.CompanyDetailsService"/>
+    <fullyQualifiedTypeName name="com.cdac.entity.CompanyDetails"/>
+    <fullyQualifiedTypeName name="com.cdac.service.EmployeeService"/>
+    <fullyQualifiedTypeName name="com.cdac.repository.EmployeeRepository"/>
+    <fullyQualifiedTypeName name="com.cdac.repository.AccountDetailsRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.cdac.service.AccountDetailsService"/>
+    <fullyQualifiedTypeName name="com.cdac.entity.AccountDetails"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="com.cdac.repository.FinancialDetailsRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="com.cdac.service.FinancialDetailsService"/>
+    <fullyQualifiedTypeName name="com.cdac.entity.FinancialDetails"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+</qualifiedTypeNameHistroy>

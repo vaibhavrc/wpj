@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Salary Slip Form</title>
+  </head>
+
+  <body>
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <form
+        class="row g-3 border border-primary shadow p-3 mb-5 bg-body-tertiary rounded d-flex bg-primary-subtle"
+      >
+        <div class="row">
+          <div class="row text-center">
+            <div class="col-3 d-flex align-items-center justify-content-center">
+              <img
+                class="w-50 rounded-circle shadow p-3 mb-5 bg-body-tertiary rounded"
+                src="./Demo_logo-2466366340.jpg"
+              />
+            </div>
+            <div class="col-6">
+              <h1>Company Name</h1>
+              <p>GST N0.123456789 TAN N0.123456789</p>
+              <h4>Address 1</h4>
+              <h4>Address 2</h4>
+              <h3>Payslip for January-2023</h3>
+            </div>
+            <div class="col-3">
+              <div class="col-md-11 col-sm-12">
+                <button type="submit" class="btn btn-primary">
+                  Print Salary Slip
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex gap-2">
+              <div class="col-6 d-flex gap-1">
+                <div class="col-3 d-flex justify-content-end align-baseline">
+                  <label for="inputEmpID" class="form-label">Employee ID</label>
+                </div>
+                <div class="col-9 d-flex justify-content-start align-baseline">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="inputEmpID"
+                    name="empid"
+                  />
+                </div>
+              </div>
+              <div class="col-6 d-flex gap-1">
+                <div class="col-3 d-flex justify-content-end align-baseline">
+                  <label for="inputName" class="form-label">Full Name</label>
+                </div>
+                <div class="col-9 d-flex justify-content-start align-baseline">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    name="name"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex gap-2">
+              <div class="col-6 d-flex gap-1">
+                <div class="col-3 d-flex justify-content-end align-baseline">
+                  <label class="form-label" for="inputGroupSelect02"
+                    >Department</label
+                  >
+                </div>
+                <div class="col-9 d-flex justify-content-start align-baseline">
+                  <select
+                    class="form-select"
+                    id="inputGroupSelect02"
+                    name="dept"
+                  >
+                    <option selected>Choose...</option>
+                    <option value="1">IT</option>
+                    <option value="2">HR</option>
+                    <option value="3">Finance</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6 d-flex gap-1">
+                <div class="col-3 d-flex justify-content-end align-baseline">
+                  <label class="form-label" for="inputGroupSelect03"
+                    >Designation</label
+                  >
+                </div>
+                <div class="col-9 d-flex justify-content-start align-baseline">
+                  <select
+                    class="form-select"
+                    id="inputGroupSelect03"
+                    name="designation"
+                  >
+                    <option selected>Choose...</option>
+                    <option value="1">Manager</option>
+                    <option value="2">Developer</option>
+                    <option value="3">Tester</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex gap-2">
+              <div class="col-6 d-flex gap-1">
+                <div class="col-3 d-flex justify-content-end align-baseline">
+                  <label for="inputDOJ" class="form-label"
+                    >Date of Joining</label
+                  >
+                </div>
+                <div class="col-9 d-flex justify-content-start align-baseline">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="inputDOJ"
+                    name="doj"
+                  />
+                </div>
+              </div>
+              <div class="col-6 d-flex gap-1">
+                <div class="col-3 d-flex justify-content-end align-baseline">
+                  <label for="inputPF" class="form-label"
+                    >PF Account Number</label
+                  >
+                </div>
+                <div class="col-9 d-flex justify-content-start align-baseline">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPF"
+                    name="pfaccount"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex gap-2">
+              <div class="col-6 d-flex gap-1">
+                <div class="col-3 d-flex justify-content-end align-baseline">
+                  <label for="inputESI" class="form-label"
+                    >ESI Account Number</label
+                  >
+                </div>
+                <div class="col-9 d-flex justify-content-start align-baseline">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputESI"
+                    name="esi"
+                  />
+                </div>
+              </div>
+              <div class="col-6 d-flex gap-1">
+                <div class="col-3 d-flex justify-content-end align-baseline">
+                  <label for="inputPan" class="form-label">PAN Number</label>
+                </div>
+                <div class="col-9 d-flex justify-content-start align-baseline">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPan"
+                    name="pan"
+                  />
+                </div>
+              </div>
+            </div>
+            <table class="table table-bordered border-primary my-2">
+              <thead>
+                <tr>
+                  <th scope="col">Earnings</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Deductions</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Basic</th>
+                  <td></td>
+                  <td class="fw-bold">Provident Fund</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Dearness Allowance</th>
+                  <td></td>
+                  <td class="fw-bold">Insurance Premium</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">House Rent Allowance</th>
+                  <td></td>
+                  <td class="fw-bold">Professional Tax</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Medical Allowance</th>
+                  <td></td>
+                  <td class="fw-bold">Income Tax</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Total Earnings</th>
+                  <td></td>
+                  <td class="fw-bold">Total Deductions</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3" class="text-center">
+                    Net Salary
+                  </th>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="col-12 d-flex gap-2">
+              <div class="col-6">
+                <div class="col-12 d-flex gap-1">
+                  <div class="col-3 d-flex justify-content-end align-baseline">
+                    <label for="inputACNumber" class="form-label"
+                      >Account Number</label
+                    >
+                  </div>
+                  <div class="col-9 d-flex justify-content-start">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputACNumber"
+                      name="acno"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 d-flex gap-1">
+                  <div class="col-3 d-flex justify-content-end align-baseline">
+                    <label for="inputBankName" class="form-label"
+                      >Bank Name</label
+                    >
+                  </div>
+                  <div
+                    class="col-9 d-flex justify-content-start align-baseline"
+                  >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputBankName"
+                      name="bank"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 d-flex gap-1">
+                  <div class="col-3 d-flex justify-content-end align-baseline">
+                    <label for="inputBranch" class="form-label"
+                      >Branch Name</label
+                    >
+                  </div>
+                  <div
+                    class="col-9 d-flex justify-content-start align-baseline"
+                  >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputBranch"
+                      name="branch"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 d-flex gap-1">
+                  <div class="col-3 d-flex justify-content-end align-baseline">
+                    <label for="inputIFSC" class="form-label">IFSC Code</label>
+                  </div>
+                  <div
+                    class="col-9 d-flex justify-content-start align-baseline"
+                  >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputIFSC"
+                      name="ifsc"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-6 d-flex align-items-center justify-content-end flex-column"
+              >
+                <h5>-------------------------------------</h5>
+                <h5>Employer Signature</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

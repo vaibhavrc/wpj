@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Employee</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <form
+        class="row g-3 my-auto mx-auto border border-primary shadow p-3 mb-5 bg-body-tertiary rounded d-flex bg-primary-subtle"
+      >
+        <div class="col-md-12 text-bg-primary text-center text-uppercase">
+          <h1 text-white text-uppercase>New Employee Form</h1>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div
+            class="border border-primary shadow p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center flex-column my-2"
+          >
+            <div class="col-12 text-center text-uppercase text-bg-primary">
+              <h3 text-uppercase>Personal Details</h3>
+            </div>
+            <div class="col-11">
+              <label for="inputName" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                name="name"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputDOB" class="form-label">Date of Birth</label>
+              <input
+                type="date"
+                class="form-control"
+                id="inputDOB"
+                name="dob"
+              />
+            </div>
+            <div class="col-11">
+              <label class="form-label" for="inputGroupSelect01">Gender</label>
+              <select class="form-select" id="inputGroupSelect01" name="gender">
+                <option selected>Choose...</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+              </select>
+            </div>
+
+            <div class="col-11">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                name="email"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputMobile" class="form-label">Mobile Number</label>
+              <input type="number" class="form-control" id="inputMobile" />
+            </div>
+
+            <div class="col-11">
+              <label for="inputCAddress" class="form-label"
+                >Current Address</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputCAddress"
+                placeholder="1234 Main St"
+                name="caddress"
+              />
+            </div>
+            <div class="col-11 my-1">
+              <label for="inputPAddress" class="form-label"
+                >Permanent Address</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputPAddress"
+                placeholder="Apartment, studio, or floor"
+                name="paddress"
+              />
+            </div>
+          </div>
+          <div
+            class="border border-primary shadow p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center flex-column my-2"
+          >
+            <div class="col-md-12 text-center text-uppercase text-bg-primary">
+              <h3 text-uppercase>Company Details</h3>
+            </div>
+            <div class="col-md-11 col-sm-12">
+              <label for="inputEmpID" class="form-label">Employee ID</label>
+              <input
+                type="number"
+                class="form-control"
+                id="inputEmpID"
+                name="empid"
+              />
+            </div>
+            <div class="col-11">
+              <label class="form-label" for="inputGroupSelect02"
+                >Department</label
+              >
+              <select class="form-select" id="inputGroupSelect02" name="dept">
+                <option selected>Choose...</option>
+                <option value="1">IT</option>
+                <option value="2">HR</option>
+                <option value="3">Finance</option>
+              </select>
+            </div>
+            <div class="col-11">
+              <label class="form-label" for="inputGroupSelect03"
+                >Designation</label
+              >
+              <select
+                class="form-select"
+                id="inputGroupSelect03"
+                name="designation"
+              >
+                <option selected>Choose...</option>
+                <option value="1">Manager</option>
+                <option value="2">Developer</option>
+                <option value="3">Tester</option>
+              </select>
+            </div>
+            <div class="col-11">
+              <label for="inputDOJ" class="form-label">Date of Joining</label>
+              <input
+                type="date"
+                class="form-control"
+                id="inputDOJ"
+                name="doj"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputDOL" class="form-label">Date of Leaving</label>
+              <input
+                type="date"
+                class="form-control"
+                id="inputDOL"
+                name="dol"
+              />
+            </div>
+            <div class="col-11 my-1">
+              <label class="form-label" for="inputGroupSelect03">Status</label>
+              <select class="form-select" id="inputGroupSelect03" name="status">
+                <option selected>Choose...</option>
+                <option value="1">Working</option>
+                <option value="2">Terminated</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div
+            class="border border-primary shadow p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center flex-column my-2"
+          >
+            <div class="col-md-12 text-center text-uppercase text-bg-primary">
+              <h3 text-uppercase>Financial Details</h3>
+            </div>
+            <div class="col-11">
+              <label for="inputbasic" class="form-label">Basic Salary</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputbasic"
+                name="basicsalary"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputallowance" class="form-label">Allowances</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputallowance"
+                name="allowance"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputdeduction" class="form-label">Deductions</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputdeduction"
+                name="deduction"
+              />
+            </div>
+            <div class="col-11 my-1">
+              <label for="inputtotal" class="form-label">Total Salary</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputtotal"
+                name="totalsalary"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputPF" class="form-label">PF Account Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputPF"
+                name="pfaccount"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputPan" class="form-label">PAN Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputPan"
+                name="pan"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputESI" class="form-label"
+                >ESI Account Number</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputESI"
+                name="esi"
+              />
+            </div>
+          </div>
+          <div
+            class="border border-primary shadow p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center flex-column my-2"
+          >
+            <div class="col-md-12 text-center text-uppercase text-bg-primary">
+              <h3 text-uppercase>Account Details</h3>
+            </div>
+            <div class="col-11">
+              <label for="inputACHolder" class="form-label"
+                >Account Holder Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputACHolder"
+                name="acholder"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputACNumber" class="form-label"
+                >Account Number</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="inputACNumber"
+                name="acno"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputBankName" class="form-label">Bank Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputBankName"
+                name="bank"
+              />
+            </div>
+            <div class="col-11">
+              <label for="inputBranch" class="form-label">Branch Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputBranch"
+                name="branch"
+              />
+            </div>
+            <div class="col-11 my-1">
+              <label for="inputIFSC" class="form-label">IFSC Code</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputIFSC"
+                name="ifsc"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-11 col-sm-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Confirm Details
+            </label>
+          </div>
+        </div>
+        <div class="col-md-11 col-sm-12">
+          <button type="submit" class="btn btn-primary">Add Employee</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
