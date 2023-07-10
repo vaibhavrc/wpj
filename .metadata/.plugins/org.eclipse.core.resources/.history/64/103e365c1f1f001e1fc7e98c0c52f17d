@@ -1,0 +1,25 @@
+package com.cdac.entity;
+
+import java.io.Serializable;
+
+public class PaySlipId implements Serializable {
+	private int empId;
+	private int month;
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public int getMonth() {
+		return month;
+	}
+	public void setMonth(int month) {
+		this.month = month;
+	}
+	
+	
+	// Constructors, getters, and setters
+
+	// Override equals() and hashCode() methods if necessary
+}

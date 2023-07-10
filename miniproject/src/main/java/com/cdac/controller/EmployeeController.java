@@ -133,4 +133,10 @@ public class EmployeeController {
 		employee.setFinancialDetails(employee1.getFinancialDetails());
 	    return employee;
 	}
+	@RequestMapping("/delete")
+	public void deleteEmployee(@RequestParam int empId) {
+		employeeService.deleteEmployee(empId);
+	}
+		
+	
 }

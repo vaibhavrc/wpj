@@ -1,0 +1,30 @@
+package com.cdac.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cdac.entity.Employee;
+import com.cdac.entity.Leave;
+import com.cdac.repository.EmployeeRepository;
+import com.cdac.repository.LeaveRepository;
+@Service
+public class LeaveService {
+	@Autowired
+	EmployeeRepository employeeRepository;
+	
+	@Autowired
+	LeaveRepository leaveRepository;
+	
+	public void addFinancial(Leave leave, int id) {
+	    Employee employee = employeeRepository.getById(id);
+	    leave.setId(employee.getEmpId()); // Set the identifier value
+
+	    employee.setLeaves(leave);
+	    leave.setEmployee(employee);
+
+	    employeeRepository.save(employee);
+	}
+	public Leave getLeaves(int id) {
+		return employeeRepository.getById(id).getLeaves();
+	}		
+}

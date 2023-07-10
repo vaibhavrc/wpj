@@ -1,6 +1,7 @@
 package com.cdac.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -10,6 +11,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.PrimaryKeyJoinColumn;
 
@@ -41,6 +43,14 @@ public class Employee {
     @PrimaryKeyJoinColumn
     @JsonManagedReference
     private AccountDetails accountDetails;
+	
+	@OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<Leave> leaves;
+	
+	@OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<PaySlip> payslips;
 
 	public int getEmpId() {
 		return empId;
@@ -127,6 +137,21 @@ public class Employee {
 	public void setAccountDetails(AccountDetails accountDetails) {
 		this.accountDetails = accountDetails;
 	}
-	
+
+	public List<Leave> getLeaves() {
+		return leaves;
+	}
+
+	public void setLeaves(List<Leave> leaves) {
+		this.leaves = leaves;
+	}
+
+	public List<PaySlip> getPayslips() {
+		return payslips;
+	}
+
+	public void setPayslips(List<PaySlip> payslips) {
+		this.payslips = payslips;
+	}
 	
 }

@@ -1,0 +1,43 @@
+package com.cdac.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cdac.entity.Leave;
+import com.cdac.entity.PaySlip;
+import com.cdac.service.LeaveService;
+import com.cdac.service.PaySlipService;
+
+@RestController
+public class PaySlipController {
+	@Autowired
+	PaySlipService paySlipService;
+	
+	@RequestMapping("/generatepayslip")
+	public void add(@RequestParam int id,@RequestParam int month) {
+		paySlipService.generatePaySlip(id, month);
+	}
+	
+	@RequestMapping("/getpayslips")
+	public List<PaySlip> getPaySlips(@RequestParam int empId) {
+		List<PaySlip> list=paySlipService.getPaySlips(empId);
+		List<PaySlip> list1=new ArrayList<PaySlip>();
+		for(PaySlip payslipvar:list) {
+			PaySlip p1=new PaySlip();
+			p1.setAccountNumber(payslipvar.getAccountNumber());
+			p1.setBankName(payslipvar.getBankName());
+			p1.setBasicSalary(payslipvar.getBasicSalary());
+			p1.setBranchName(payslipvar.getBranchName())
+			list1.add(p1);
+		}
+		
+		return list1;
+	}
+}

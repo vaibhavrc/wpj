@@ -1,0 +1,12 @@
+package com.cdac.entity;
+
+import java.io.Serializable;
+
+public class PaySlipId implements Serializable {
+	private int empId;
+	private int month;
+
+	// Constructors, getters, and setters
+
+	// Override equals() and hashCode() methods if necessary
+}
